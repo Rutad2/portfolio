@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Case study: Curly Hair App — a UX research and design project helping people with curly and natural hair build a personalized hair care routine."
+  >
+
+  <title>Curly Hair App | Ruth Tadesse</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&family=Mrs+Saint+Delafield&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="case-study.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      Ruth Tadesse
+    </a>
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="main-navigation">
+      <a href="index.html#work" class="active">Work</a>
+      <a href="about.html">About</a>
+      <a href="resume.pdf" target="_blank">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- CASE STUDY HERO -->
+    <section class="case-hero">
+      <a class="back-link" href="index.html#work">
+        ← Back to work
+      </a>
+
+      <h1 class="case-title">Curly Hair App</h1>
+
+      <p class="case-summary">
+        A UX research and app design project helping people with curly
+        and natural hair build a personalized hair care routine, instead
+        of piecing one together from scattered advice and trial and error.
+      </p>
+
+      <dl class="case-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>UX Research, UI Design</dd>
+        </div>
+
+        <div>
+          <dt>Type</dt>
+          <dd>Class Project</dd>
+        </div>
+
+        <div>
+          <dt>Timeline</dt>
+          <dd>4-week research sprint</dd>
+        </div>
+
+        <div>
+          <dt>Tools</dt>
+          <dd>Figma, Google Forms, Miro</dd>
+        </div>
+      </dl>
+
+      <div class="case-hero-image">
+        <div class="hero-device-stack">
+          <div class="hero-device hero-device--left">
+            <div class="device-frame">
+              <div class="device-screen">
+                <img src="images/curly-hair-app/hifi-product-analysis.png" alt="Product analysis screen showing a 92 percent match score and ingredient breakdown">
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-device hero-device--main">
+            <div class="device-frame">
+              <div class="device-screen">
+                <img src="images/curly-hair-app/hifi-home.png" alt="Curlè app home dashboard showing weather-based frizz risk, today's routine card, and a daily hair science tip">
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-device hero-device--right">
+            <div class="device-frame">
+              <div class="device-screen">
+                <img src="images/curly-hair-app/hifi-journal.png" alt="Journal screen showing progress tracking with a before and after photo timeline">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM STATEMENT -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">The Problem</p>
+          <h2>Hair care advice is everywhere, and nowhere at once</h2>
+        </div>
+
+        <div class="case-section-body">
+          <p>
+            People with curly or natural hair often struggle to build a
+            consistent hair care routine because information about
+            products, techniques, and curl care is scattered across
+            social media and other sources. As a result, users feel
+            overwhelmed and unsure about what actually works for their
+            specific hair type and goals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- USER GOALS -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">User Goals</p>
+          <h2>What users need from the app</h2>
+        </div>
+
+        <div class="case-section-body">
+          <ol class="goal-list">
+            <li>Receive personalized hair care routines based on curl type, texture, and hair goals.</li>
+            <li>Discover products that work for their specific hair needs, and avoid ones that cause dryness or frizz.</li>
+            <li>Learn simple styling techniques that are easy to follow and effective for maintaining curls.</li>
+            <li>Track routines, products, and styling methods to identify what works best over time.</li>
+            <li>Reduce stress and save time when making daily hair care decisions.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCENARIOS -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Scenarios</p>
+          <h2>How each goal plays out in practice</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <div class="scenario-grid">
+            <div class="scenario-card">
+              <h3>Personalized Routines</h3>
+              <span class="label">Scenario</span>
+              <p>
+                A new user answers questions about curl type, texture,
+                and hair goals. The app generates a personalized routine
+                for wash day and daily maintenance.
+              </p>
+              <span class="label">Success</span>
+              <p>
+                The user receives a routine tailored to their hair
+                profile and feels confident following a structured plan.
+              </p>
+            </div>
+
+            <div class="scenario-card">
+              <h3>Product Recommendations</h3>
+              <span class="label">Scenario</span>
+              <p>
+                A user searching for a leave-in conditioner that reduces
+                frizz filters products by hair type and concerns to see
+                personalized recommendations.
+              </p>
+              <span class="label">Success</span>
+              <p>
+                The user finds a product that matches their needs and
+                feels confident trying it.
+              </p>
+            </div>
+
+            <div class="scenario-card">
+              <h3>Styling Tips</h3>
+              <span class="label">Scenario</span>
+              <p>
+                A user wanting better curl definition opens a tutorial
+                section with step-by-step instructions and visuals.
+              </p>
+              <span class="label">Success</span>
+              <p>
+                The user follows the guide successfully and can recreate
+                the style independently next time.
+              </p>
+            </div>
+
+            <div class="scenario-card">
+              <h3>Tracking What Works</h3>
+              <span class="label">Scenario</span>
+              <p>
+                After trying a new technique, the user logs the products
+                used and the results in the app.
+              </p>
+              <span class="label">Success</span>
+              <p>
+                The user reviews past routines and identifies which
+                products and techniques worked best.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH PLAN -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Research</p>
+          <h2>Understanding the wash-day struggle</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p>
+            Before designing anything, I wanted to understand the daily
+            struggles people with curly and natural hair face, how they
+            currently choose products and routines, and what would
+            actually be helpful in an app &mdash; not just what sounded good
+            on paper.
+          </p>
+
+          <div class="audience-grid" style="margin: 36px 0 44px;">
+            <div>
+              <h3>Primary Audience</h3>
+              <ul>
+                <li>Ages 18&ndash;35</li>
+                <li>Curly, coily, or textured hair (mostly Type 2C&ndash;4C)</li>
+                <li>Interested in improving hair health or managing curls more easily</li>
+                <li>Uses multiple products or looks online for hair advice</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Secondary Audience</h3>
+              <ul>
+                <li>Ages 25&ndash;45</li>
+                <li>Manages curly or natural hair at home</li>
+                <li>Relies on trial-and-error or DIY routines</li>
+                <li>Looking for an easier, more organized routine</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="method-grid">
+            <div class="method-card">
+              <h3>Survey</h3>
+              <p>
+                A Google Forms survey (27 respondents) collected
+                information on hair routines, frustrations, product
+                preferences, and styling habits &mdash; e.g. how often
+                users struggle choosing products, and where they
+                typically get hair care advice.
+              </p>
+            </div>
+
+            <div class="method-card">
+              <h3>User Interviews</h3>
+              <p>
+                Phone interviews explored frustrations with products and
+                routines, emotional experiences with hair care, current
+                habits and workarounds, and what users would want from
+                a helpful app. Interviews were recorded and transcribed
+                for analysis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAS -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Personas</p>
+          <h2>Designing for Maya and Jordan</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <div class="persona-grid">
+
+            <article class="persona-card">
+              <span class="persona-tag">Primary</span>
+              <h3>Maya</h3>
+              <p class="persona-role">The Frustrated Experimenter &middot; 24 &middot; Atlanta, GA &middot; Marketing Assistant</p>
+
+              <dl class="persona-facts">
+                <div>
+                  <dt>Hair Type</dt>
+                  <dd>Curly, still learning her porosity and pattern</dd>
+                </div>
+                <div>
+                  <dt>Wash Day</dt>
+                  <dd>Up to 4 hours, tiring</dd>
+                </div>
+              </dl>
+
+              <h4>Goals</h4>
+              <ul>
+                <li>Find products that match her hair type without guessing</li>
+                <li>Reduce time and effort spent on wash day</li>
+                <li>Avoid wasting money on ineffective products</li>
+              </ul>
+
+              <h4>Pain Points</h4>
+              <ul>
+                <li>Overwhelmed by too many product options</li>
+                <li>Struggles to identify the right products for her porosity and curl type</li>
+                <li>Lost trust after products left her hair stiff or dry</li>
+              </ul>
+
+              <p class="persona-quote">
+                She hesitates in the aisle, puts the bottles back, and
+                later searches TikTok for someone with curls like hers
+                to confirm what she should have bought.
+              </p>
+            </article>
+
+            <article class="persona-card">
+              <span class="persona-tag">Secondary</span>
+              <h3>Jordan</h3>
+              <p class="persona-role">The Maintenance-Focused Minimalist &middot; 30 &middot; Chicago, IL &middot; Nurse</p>
+
+              <dl class="persona-facts">
+                <div>
+                  <dt>Hair Type</dt>
+                  <dd>4A, self-reported and not fully confident</dd>
+                </div>
+                <div>
+                  <dt>Schedule</dt>
+                  <dd>12-hour shifts, limited free time</dd>
+                </div>
+              </dl>
+
+              <h4>Goals</h4>
+              <ul>
+                <li>Maintain moisture and prevent breakage</li>
+                <li>Keep hair manageable with minimal effort</li>
+                <li>Find quick routines for busy work weeks</li>
+              </ul>
+
+              <h4>Pain Points</h4>
+              <ul>
+                <li>Hair dries out quickly between wash days</li>
+                <li>Little time to research products or routines</li>
+                <li>Most online content is too long or complicated to follow</li>
+              </ul>
+
+              <p class="persona-quote">
+                Her hair feels dry before a long shift, so she opens her
+                phone hoping for a quick way to refresh it &mdash; but most
+                of what she finds takes too long to be useful.
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORYBOARD -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Storyboard</p>
+          <h2>Maya's story, before Curl&egrave;</h2>
+        </div>
+
+        <div class="case-section-body">
+          <p style="margin-bottom: 20px;">
+            To ground the design in a real moment instead of an
+            abstract user goal, I storyboarded Maya's current
+            experience &mdash; from the frustration that sends her
+            looking for a fix, to what that same trip looks like with
+            Curl&egrave; in hand.
+          </p>
+
+          <div class="sketch-frame sketch-frame--compact">
+            <img src="images/curly-hair-app/storyboard.jpg" alt="Six-panel storyboard of Maya's in-store scenario: she is frustrated by past bad products, scans a bottle's label in-app, sees it's a poor match and is glad she checked, then the app finds a 95 percent match nearby which she buys with confidence">
+          </div>
+
+          <p style="margin-top: 16px; margin-bottom: 0; font-size: 14px; opacity: 0.75;">
+            The same "hesitates in the aisle" moment from Maya's
+            persona, played out end to end.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETITIVE ANALYSIS -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Competitive Analysis</p>
+          <h2>Where existing apps fall short</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p>
+            I reviewed four existing hair care apps to see what was
+            working, and where the gaps were. One happens to share a
+            name with this project &mdash; "Competitor A" below is an
+            unrelated app, not an earlier version of Curl&egrave;.
+          </p>
+
+          <div class="comp-table-wrap">
+            <table class="comp-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Competitor A</th>
+                  <th>Scrunchie</th>
+                  <th>Hair2Hair</th>
+                  <th>HairHub</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">AI Hair Scanning</th>
+                  <td class="best">Accurate &amp; fast</td>
+                  <td>Survey only</td>
+                  <td>Manual only</td>
+                  <td>Style only</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ingredient Analysis</th>
+                  <td>None</td>
+                  <td>None</td>
+                  <td class="best">Detailed breakdowns</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <th scope="row">Custom Routines</th>
+                  <td>Paid only</td>
+                  <td>Long survey</td>
+                  <td>Basic routine</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <th scope="row">Weather Sync</th>
+                  <td>None</td>
+                  <td>Humidity check</td>
+                  <td>None</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <th scope="row">Navigation</th>
+                  <td>Simple UI</td>
+                  <td>Too many steps</td>
+                  <td>Clear tabs</td>
+                  <td class="best">Swipe UI</td>
+                </tr>
+                <tr>
+                  <th scope="row">User Expectations</th>
+                  <td>High paywall</td>
+                  <td>Lengthy quiz</td>
+                  <td>Educational</td>
+                  <td>Fun, inspiring</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="strategy-list">
+            <div class="strategy-item">
+              <h3>01 &mdash; Reduce friction for immediate value</h3>
+              <p>
+                <span class="label">Strategy:</span> Deliver AI scan
+                results and a basic routine before any paywall.
+              </p>
+              <p>
+                <span class="label">Goal:</span> Build user trust first,
+                unlike Competitor A, which creates high drop-off by
+                gating results immediately.
+              </p>
+            </div>
+
+            <div class="strategy-item">
+              <h3>02 &mdash; Low-effort interaction model</h3>
+              <p>
+                <span class="label">Strategy:</span> A gesture-based
+                swipe interface for routine customization and product
+                discovery.
+              </p>
+              <p>
+                <span class="label">Goal:</span> Inspired by HairHub's
+                intuitive navigation, this cuts the cognitive load of
+                managing hair care for busy users like Jordan.
+              </p>
+            </div>
+
+            <div class="strategy-item">
+              <h3>03 &mdash; An integrated care ecosystem</h3>
+              <p>
+                <span class="label">Strategy:</span> Combine precision
+                scanning, ingredient transparency, and environmental
+                awareness in one place.
+              </p>
+              <p>
+                <span class="label">Goal:</span> A single-source
+                solution, so users don't have to juggle multiple apps
+                to understand their hair's daily needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH SYNTHESIS -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Research Summary</p>
+          <h2>What the data showed</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <div class="stat-grid">
+            <div class="stat-card">
+              <span class="stat-number">14%</span>
+              <span class="stat-label">of respondents are happy with their current hair care routine</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">53%</span>
+              <span class="stat-label">rarely try new products because of the cost of getting it wrong</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">64%</span>
+              <span class="stat-label">struggle most with picking the right gels and creams</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">73%</span>
+              <span class="stat-label">want an app that analyzes hair and weather to make routines easier</span>
+            </div>
+          </div>
+
+          <div class="insight-list">
+            <div class="insight-item">
+              <span class="mark">&ldquo;</span>
+              <div>
+                <h3>Bad experiences erode trust fast</h3>
+                <p>
+                  Interview participants described products that left
+                  their hair "stiff and horrible" or "lumpy and sticky."
+                  Those experiences make people hesitant to try anything
+                  new, even when their current routine isn't working.
+                </p>
+              </div>
+            </div>
+
+            <div class="insight-item">
+              <span class="mark">&ldquo;</span>
+              <div>
+                <h3>Wash day is a dreaded chore, not a ritual</h3>
+                <p>
+                  Some routines take up to four hours. Participants
+                  described the process as "tiring" and "a pain,"
+                  leading many to push wash day back rather than deal
+                  with it.
+                </p>
+              </div>
+            </div>
+
+            <div class="insight-item">
+              <span class="mark">&ldquo;</span>
+              <div>
+                <h3>Users trust people over ads</h3>
+                <p>
+                  Respondents said they trust TikTok, YouTube, and
+                  friends more than marketing, because they want proof
+                  from someone with hair that actually looks like theirs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SITEMAP / INFORMATION ARCHITECTURE -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Information Architecture</p>
+          <h2>Mapping the app before drawing a single screen</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p style="margin-bottom: 24px;">
+            With the research findings in hand, I mapped the full
+            structure of the app before sketching any screens. Two
+            entry points &mdash; a returning user signing in, and a
+            new user starting the AI hair scan &mdash; both resolve to
+            one home dashboard, which branches into five clear areas:
+            Home, Search &amp; Shop, Scan, Journal, and Profile.
+          </p>
+
+          <div class="diagram-frame">
+            <img src="images/curly-hair-app/sitemap.png" alt="Sitemap showing Sign In and the I'm New start-scan onboarding flow both leading to the Home Dashboard, which branches into Home, Search and Shop, Scan, Journal, and Profile sections, each with their own sub-pages">
+          </div>
+
+          <p style="margin-top: 24px; margin-bottom: 0;">
+            Keeping the scanner as its own center-tab destination
+            &mdash; rather than burying it in a menu &mdash; reflects
+            the research directly: scanning is the app's core value,
+            so it needed to be reachable from anywhere in one tap.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT STRATEGY -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Content Strategy</p>
+          <h2>Real hair science, made simple</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <div class="content-message">
+            <span class="label">Core Message</span>
+            <p>"Real hair science made simple."</p>
+          </div>
+
+          <p>
+            The app breaks complicated ingredient lists down into a
+            simple match score, so users can quickly tell whether a
+            product fits their hair type and porosity &mdash; without
+            needing to research it themselves. The voice stays
+            professional but laid-back: a guide that knows the facts
+            without leaning on medical or scientific jargon.
+          </p>
+
+          <table class="tone-table" style="margin-top: 30px;">
+            <thead>
+              <tr>
+                <th>Attribute</th>
+                <th>Context</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Expert</td>
+                <td>Educational</td>
+                <td><em>"This product contains heavy waxes. Since your hair is low-porosity, it may sit on top and cause buildup."</em></td>
+              </tr>
+              <tr>
+                <td>Helpful</td>
+                <td>Encouraging</td>
+                <td><em>"This is only a 50% match. Try the 'Better Match' option for something more hydrating."</em></td>
+              </tr>
+              <tr>
+                <td>Direct</td>
+                <td>Urgent</td>
+                <td><em>"It's very humid today. Use a sealing product to help reduce frizz."</em></td>
+              </tr>
+              <tr>
+                <td>Honest</td>
+                <td>Relatable</td>
+                <td><em>"This smells amazing, but it may not provide the moisture your hair needs today."</em></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- USER FLOW -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Task Analysis</p>
+          <h2>Generating an AI hair profile</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p class="flow-goal">Goal</p>
+          <p style="margin-bottom: 34px;">
+            Give a new user an accurate hair classification in one
+            simple flow, with zero guesswork.
+          </p>
+
+          <div class="flow-steps">
+            <div class="flow-step">
+              <span class="step-num"></span>
+              <div>
+                <p>User opens the app and selects "Analyze My Hair."</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <span class="step-num"></span>
+              <div>
+                <p>User follows on-screen prompts to position their camera.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <span class="step-num"></span>
+              <div>
+                <p>User takes or uploads a clear photo of their hair texture.</p>
+              </div>
+            </div>
+
+            <div class="flow-step">
+              <span class="step-num"></span>
+              <div>
+                <p>The AI processes the image against hair classification data.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flow-success">
+            <strong>Success:</strong> the user sees their confirmed
+            hair classification (e.g. Type 4A, High Porosity) &mdash;
+            no manual quiz, no guessing.
+          </div>
+
+          <p class="flow-goal" style="margin-top: 44px;">Mapped as a flow</p>
+          <p style="margin-bottom: 24px;">
+            Diagramming the flow surfaced an edge case the step list
+            glossed over: what happens when the photo isn't usable.
+            The flowchart builds in a clarity check that loops the
+            user back to retake the photo, instead of letting a bad
+            scan silently produce a wrong hair profile.
+          </p>
+
+          <div class="diagram-frame">
+            <img src="images/curly-hair-app/user-flow.jpg" alt="Flowchart of the Analyze My Hair task: user taps the button, views camera prompts, captures a photo, then a decision point asks if the photo is clear and well-lit -- if no, it loops back to retake the photo, if yes, the AI processes the image and generates the Hair ID profile">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISUAL IDENTITY -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Visual Identity</p>
+          <h2>Warm and personal, not clinical</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p style="margin-bottom: 30px;">
+            The brand needed to feel like a knowledgeable friend, not
+            a lab report &mdash; research showed users trusted TikTok
+            and friends over ads and official-sounding advice, so
+            "Curl&egrave;" leans warm and personal even while
+            explaining ingredient science.
+          </p>
+
+          <div class="identity-grid">
+            <div>
+              <div class="identity-device">
+                <div class="device-frame">
+                  <div class="device-screen">
+                    <div class="home-mock-screen" style="background: linear-gradient(160deg, #b36743, #2c1b13);">
+                      <div class="home-icon-grid">
+                        <div class="home-icon-glyph">
+                          <img src="images/curly-hair-app/iconfinal.png" alt="Curlè app icon on a phone home screen">
+                        </div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                      </div>
+                      <div class="home-mock-dock">
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="identity-block">
+                <span class="label">Color Palette</span>
+                <div class="swatch-row">
+                  <span class="swatch" style="background:#2c1b13;"></span>
+                  <span class="swatch" style="background:#b36743;"></span>
+                  <span class="swatch" style="background:#f4efe0;"></span>
+                  <span class="swatch" style="background:#ebe6d7;"></span>
+                </div>
+              </div>
+
+              <div class="identity-block">
+                <span class="label">Typography</span>
+                <div class="type-sample">
+                  <div>
+                    <span class="heading-sample">Aa</span>
+                    <span>Serif Display &middot; Headings</span>
+                  </div>
+                  <div>
+                    <span class="body-sample">Aa</span>
+                    <span>Inter Regular &middot; Body</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="identity-block">
+                <span class="label">Brand Keywords</span>
+                <div class="keyword-row">
+                  <span class="keyword-chip">Warm</span>
+                  <span class="keyword-chip">Confident</span>
+                  <span class="keyword-chip">Approachable</span>
+                  <span class="keyword-chip">Science-backed</span>
+                  <span class="keyword-chip">Personal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ITERATION: SKETCH TO WIREFRAME TO HI-FI -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Iteration</p>
+          <h2>From sketch to interface</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p style="margin-bottom: 20px;">
+            Every screen started on paper. Sketching the full flow by
+            hand first &mdash; before opening Figma &mdash; kept the
+            focus on structure and content over visual polish, and
+            made it fast to throw ideas away.
+          </p>
+
+          <span class="label" style="display: block; margin-bottom: 14px;">Paper Sketches</span>
+          <div class="sketch-frame sketch-frame--medium" style="margin-bottom: 44px;">
+            <img src="images/curly-hair-app/lofi-sketches.jpg" alt="Hand-drawn pencil sketches of the Home, Shop, Scan, Journal, and Profile screens">
+          </div>
+
+          <p style="margin-bottom: 36px;">
+            Digital wireframes came next, locking in the information
+            architecture &mdash; a weather-aware alert, a swipeable
+            routine card, and a quick-tap product row &mdash; before
+            any visual design. The high-fidelity pass then layered in
+            the "Curl&egrave;" brand identity: a warm terracotta and
+            cream palette, a serif display face, and hand-drawn style
+            icons that felt more personal than clinical.
+          </p>
+
+          <div class="iteration-grid">
+            <div class="iteration-col lofi">
+              <span class="label">Digital Wireframe</span>
+              <div class="screen-frame screen-frame--wireframe">
+                <img src="images/curly-hair-app/lofi-home.png" alt="Low-fidelity wireframe of the home dashboard, showing weather alert, routine card, and daily tip">
+              </div>
+            </div>
+
+            <div class="iteration-col hifi">
+              <span class="label">Final Design</span>
+              <div class="screen-frame device-frame">
+                <div class="device-screen">
+                  <img src="images/curly-hair-app/hifi-home.png" alt="High-fidelity home dashboard for Curlè, showing weather-based frizz risk, today's routine card, and a daily hair science tip">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <span class="label" style="display: block; margin: 40px 0 14px;">More Wireframes</span>
+          <div class="wireframe-strip">
+            <div class="screen-frame screen-frame--wireframe">
+              <img src="images/curly-hair-app/lofi-onboarding.png" alt="Low-fidelity wireframe of the onboarding goal-selection screen">
+            </div>
+            <div class="screen-frame screen-frame--wireframe">
+              <img src="images/curly-hair-app/lofi-scan.png" alt="Low-fidelity wireframe of the AI hair scan screen">
+            </div>
+            <div class="screen-frame screen-frame--wireframe">
+              <img src="images/curly-hair-app/lofi-discovery.png" alt="Low-fidelity wireframe of the Discovery Hub screen">
+            </div>
+            <div class="screen-frame screen-frame--wireframe">
+              <img src="images/curly-hair-app/lofi-profile.png" alt="Low-fidelity wireframe of the profile screen">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION WALKTHROUGH -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">The Solution</p>
+          <h2>Walking through Curl&egrave;</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p style="margin-bottom: 20px;">
+            The final flow answers each user goal from the research
+            directly: a guided scan replaces guesswork, a match score
+            replaces trial and error, and a daily log replaces relying
+            on memory.
+          </p>
+
+          <div class="feature-row">
+            <div class="screen-frame device-frame">
+              <div class="device-screen">
+                <img src="images/curly-hair-app/hifi-onboarding.png" alt="Onboarding screen asking the user their primary hair goal, with options for Moisture, Definition, Growth, and Scalp Health">
+              </div>
+            </div>
+            <div class="feature-copy">
+              <span class="label">01 &mdash; Onboarding</span>
+              <h3>A quick goal check, not a 6-minute quiz</h3>
+              <p>
+                Competitor apps like Scrunchie stretched onboarding
+                past six minutes of questions. Curl&egrave; keeps it
+                short, visual, and single-choice &mdash; addressing the
+                "lengthy quiz" gap identified in the competitive
+                analysis.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="screen-frame device-frame">
+              <div class="device-screen">
+                <img src="images/curly-hair-app/hifi-scan.png" alt="AI hair scan screen titled Let's Find Your Hair DNA, with a camera framing guide over a photo of curly hair">
+              </div>
+            </div>
+            <div class="feature-copy">
+              <span class="label">02 &mdash; AI Hair Scan</span>
+              <h3>Confirming hair type with a photo, not a guess</h3>
+              <p>
+                This directly answers the task flow from the research
+                phase: users capture a guided photo, and the app
+                returns a confirmed classification &mdash; replacing
+                the uncertainty Maya described when self-identifying
+                her porosity and curl pattern.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="screen-frame device-frame">
+              <div class="device-screen">
+                <img src="images/curly-hair-app/hifi-profile-created.png" alt="Hair DNA Profile Created confirmation screen showing High Porosity, Type 4A Curls, with a button to go to the dashboard">
+              </div>
+            </div>
+            <div class="feature-copy">
+              <span class="label">03 &mdash; Instant Payoff</span>
+              <h3>Value before any paywall</h3>
+              <p>
+                The strategy from the competitive analysis: give users
+                their hair profile and first routine for free.
+                Competitor A gates this behind a paywall, which
+                research showed creates high drop-off and breaks trust
+                before it's even built.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="screen-frame device-frame">
+              <div class="device-screen">
+                <img src="images/curly-hair-app/hifi-product-analysis.png" alt="Product analysis screen showing a 92 percent match score for a Mielle rosemary mint oil, with an ingredient breakdown of good ingredients and ones to avoid">
+              </div>
+            </div>
+            <div class="feature-copy">
+              <span class="label">04 &mdash; Product Match Score</span>
+              <h3>Ingredient science, in plain language</h3>
+              <p>
+                Solves the "guesswork problem" from the research
+                summary directly: instead of reading a label and
+                guessing, users get a compatibility score plus a short,
+                jargon-free explanation of why an ingredient will or
+                won't work for their specific porosity.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="screen-frame device-frame">
+              <div class="device-screen">
+                <img src="images/curly-hair-app/hifi-journal.png" alt="Journal screen showing a definition goal at 60 percent, a before and after photo timeline, and a daily log of routine notes">
+              </div>
+            </div>
+            <div class="feature-copy">
+              <span class="label">05 &mdash; Progress Journal</span>
+              <h3>Tracking what actually works</h3>
+              <p>
+                Answers the "track what works over time" goal from
+                research: a simple log of products, techniques, and
+                results, so users can look back instead of relying on
+                memory.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MORE SCREENS -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">More Screens</p>
+          <h2>A closer look</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <div class="screen-flow">
+            <div class="screen-item">
+              <div class="screen-frame device-frame">
+                <div class="device-screen">
+                  <img src="images/curly-hair-app/hifi-welcome.png" alt="Curlè app welcome screen">
+                </div>
+              </div>
+              <span class="screen-step-num">Welcome</span>
+            </div>
+
+            <div class="screen-item">
+              <div class="screen-frame device-frame">
+                <div class="device-screen">
+                  <img src="images/curly-hair-app/hifi-discovery.png" alt="Discovery hub screen with product categories and recommended products for the user's hair">
+                </div>
+              </div>
+              <span class="screen-step-num">Discovery Hub</span>
+            </div>
+
+            <div class="screen-item">
+              <div class="screen-frame device-frame">
+                <div class="device-screen">
+                  <img src="images/curly-hair-app/hifi-profile.png" alt="User profile screen in the Curlè app">
+                </div>
+              </div>
+              <span class="screen-step-num">Profile</span>
+            </div>
+
+            <div class="screen-item">
+              <div class="screen-frame device-frame">
+                <div class="device-screen">
+                  <img src="images/curly-hair-app/hifi-journal2.png" alt="My Shelf screen in the journal tab, showing saved products and a wishlist">
+                </div>
+              </div>
+              <span class="screen-step-num">My Shelf</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROTOTYPE LINK -->
+    <section class="case-section">
+      <div class="prototype-card">
+        <div>
+          <h3>See it in motion</h3>
+          <p>
+            Click through the full interactive prototype in Figma,
+            including transitions and states not shown above.
+          </p>
+        </div>
+
+        <div class="case-nav">
+          <a class="primary" href="https://www.figma.com/proto/qBU60MEJgZNUKIdzLrRYvW/Milestone-18?node-id=23-95&p=f&t=PoiIOdJodan9bn6S-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" rel="noopener">
+            View Prototype in Figma →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING / NEXT STEPS -->
+    <section class="case-closing">
+      <p class="eyebrow" style="margin-bottom: 18px;">Reflection</p>
+      <h2>What I'd explore next</h2>
+      <p>
+        With the core flow validated, the next round would focus on
+        usability testing the AI scan's accuracy across a wider range
+        of hair textures, and expanding the "Discover" tab's filtering
+        so users can search by concern (frizz, breakage, buildup) as
+        easily as by category.
+      </p>
+
+      <div class="case-nav">
+        <a class="primary" href="national-park-app.html">Next project →</a>
+        <a href="index.html#work">Back to work</a>
+      </div>
+
+      <p class="closing-note" style="margin-top: 36px;">
+        Thanks for reading!
+        <span>♡</span>
+      </p>
+    </section>
+
+  </main>
+
+  <script>
+    const menuButton = document.querySelector(".menu-button");
+    const navigation = document.querySelector(".site-nav");
+
+    menuButton.addEventListener("click", () => {
+      const menuIsOpen = navigation.classList.toggle("open");
+
+      menuButton.setAttribute(
+        "aria-expanded",
+        menuIsOpen.toString()
+      );
+
+      document.body.classList.toggle("menu-open", menuIsOpen);
+    });
+
+    navigation.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navigation.classList.remove("open");
+        document.body.classList.remove("menu-open");
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</body>
+</html>

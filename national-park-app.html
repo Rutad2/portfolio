@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Case study: National Park App (ParkPlan) — a UX research and app design project helping travelers plan a national park trip in one place instead of switching between five different websites."
+  >
+
+  <title>National Park App | Ruth Tadesse</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&family=Mrs+Saint+Delafield&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="case-study.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      Ruth Tadesse
+    </a>
+
+    <button
+      class="menu-button"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="main-navigation">
+      <a href="index.html#work" class="active">Work</a>
+      <a href="about.html">About</a>
+      <a href="resume.pdf" target="_blank">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- CASE STUDY HERO -->
+    <section class="case-hero">
+      <a class="back-link" href="index.html#work">
+        ← Back to work
+      </a>
+
+      <h1 class="case-title">National Park App</h1>
+
+      <p class="case-summary">
+        A UX research and app design project helping travelers plan a
+        national park trip in one place &mdash; trails, lodging,
+        transportation, and conditions &mdash; instead of switching
+        between five different websites to piece one trip together.
+      </p>
+
+      <dl class="case-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>UX Research, UI Design</dd>
+        </div>
+
+        <div>
+          <dt>Type</dt>
+          <dd>Personal Project</dd>
+        </div>
+
+        <div>
+          <dt>Timeline</dt>
+          <dd>2-month self-directed project</dd>
+        </div>
+
+        <div>
+          <dt>Tools</dt>
+          <dd>Figma, Google Forms</dd>
+        </div>
+      </dl>
+
+      <div class="case-hero-image">
+        <div class="hero-device-stack">
+          <div class="hero-device hero-device--left">
+            <div class="device-frame">
+              <div class="device-screen">
+                <img src="images/natural-park-app/park-detail.png" alt="ParkPlan park detail screen for Yosemite showing current conditions: weather, crowd level, road status, shuttle status, and parking">
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-device hero-device--main">
+            <div class="device-frame">
+              <div class="device-screen">
+                <img src="images/natural-park-app/home.png" alt="ParkPlan home screen greeting Maya, showing an upcoming trip alert, featured parks, and popular trails">
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-device hero-device--right">
+            <div class="device-frame">
+              <div class="device-screen">
+                <img src="images/natural-park-app/itinerary.png" alt="ParkPlan itinerary screen showing a day-by-day Yosemite trip plan">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM STATEMENT -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">The Problem</p>
+          <h2>Planning a trip means juggling five tabs at once</h2>
+        </div>
+
+        <div class="case-section-body">
+          <p>
+            Planning a national park trip is a challenge for travelers
+            with limited experience because information about trails,
+            lodging, transportation, crowds, and park conditions is
+            scattered across multiple sources. There's no single place
+            to go from "I want to visit Yosemite" to an actual,
+            realistic plan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- USER GOALS -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">User Goals</p>
+          <h2>What travelers need from the app</h2>
+        </div>
+
+        <div class="case-section-body">
+          <ol class="goal-list">
+            <li>Plan a complete national park trip in one place, without switching between multiple websites.</li>
+            <li>Discover trails and activities that match their difficulty, interests, time, and experience level.</li>
+            <li>Understand where to stay and how to get around &mdash; entrances, driving times, and shuttles.</li>
+            <li>Prepare for park conditions and avoid problems: weather, closures, crowds, and permits.</li>
+            <li>Build and save a personalized itinerary organized by realistic distance and time.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCENARIOS -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Scenarios</p>
+          <h2>How each goal plays out in practice</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <div class="scenario-grid">
+            <div class="scenario-card">
+              <h3>First-Time Planning</h3>
+              <span class="label">Scenario</span>
+              <p>
+                You want to visit Yosemite but don't know where to
+                start. Find important information about getting
+                there, where to stay, and what to do.
+              </p>
+              <span class="label">Success</span>
+              <p>
+                The user finds transportation, lodging areas, and
+                activity recommendations on the park overview page.
+              </p>
+            </div>
+
+            <div class="scenario-card">
+              <h3>Finding the Right Trail</h3>
+              <span class="label">Scenario</span>
+              <p>
+                You're visiting Grand Teton and want a scenic hike
+                that's beginner-friendly and good for photography.
+              </p>
+              <span class="label">Success</span>
+              <p>
+                The user finds a matching trail using the explore
+                filters.
+              </p>
+            </div>
+
+            <div class="scenario-card">
+              <h3>Where to Stay</h3>
+              <span class="label">Scenario</span>
+              <p>
+                You're booking a trip and need to decide whether to
+                stay inside the park or in a nearby town.
+              </p>
+              <span class="label">Success</span>
+              <p>
+                The user compares locations and understands travel
+                times on the stay &amp; transportation page.
+              </p>
+            </div>
+
+            <div class="scenario-card">
+              <h3>Seasonal Prep</h3>
+              <span class="label">Scenario</span>
+              <p>
+                You're going to Mount Rainier in September and want to
+                know what conditions to expect.
+              </p>
+              <span class="label">Success</span>
+              <p>
+                The user finds weather, closures, and seasonal
+                recommendations on the park's conditions page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH PLAN -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Research</p>
+          <h2>Understanding how people actually plan a trip</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p>
+            I wanted to understand how travelers currently plan
+            national park trips, what resources they turn to, and
+            where the process breaks down &mdash; before designing
+            anything.
+          </p>
+
+          <div class="audience-grid" style="margin: 36px 0 44px;">
+            <div>
+              <h3>Target Users</h3>
+              <ul>
+                <li>Ages 18&ndash;45</li>
+                <li>People interested in visiting national parks</li>
+                <li>Beginner to intermediate travelers</li>
+                <li>People who plan their own trips using websites and apps</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Hypothesis</h3>
+              <ul>
+                <li>Information is spread across different platforms</li>
+                <li>Users spend extra time comparing trails, lodging, and conditions</li>
+                <li>A centralized planning tool could help users feel prepared</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="method-grid">
+            <div class="method-card">
+              <h3>Survey</h3>
+              <p>
+                An 18-person Google Forms survey collected data on
+                planning resources, biggest frustrations, and most
+                important trip information &mdash; giving a mix of
+                beginner, some-experience, and experienced travelers.
+              </p>
+            </div>
+
+            <div class="method-card">
+              <h3>User Interviews</h3>
+              <p>
+                Interviews with 5&ndash;6 participants explored their
+                planning process end to end: how they chose places,
+                trails, and lodging, and what went wrong along the way.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERSONAS -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Personas</p>
+          <h2>Designing for Maya and Jordan</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <div class="persona-grid">
+
+            <article class="persona-card">
+              <span class="persona-tag">Primary</span>
+              <h3>Maya Chen</h3>
+              <p class="persona-role">26 &middot; Seattle, WA &middot; Marketing Coordinator</p>
+
+              <dl class="persona-facts">
+                <div>
+                  <dt>Experience</dt>
+                  <dd>First national park trip, limited outdoor planning experience</dd>
+                </div>
+                <div>
+                  <dt>Motivation</dt>
+                  <dd>Got interested after seeing photos on social media</dd>
+                </div>
+              </dl>
+
+              <h4>Goals</h4>
+              <ul>
+                <li>Plan her first national park trip with confidence</li>
+                <li>Find scenic, beginner-friendly hikes</li>
+                <li>Avoid crowds and spend less time researching</li>
+              </ul>
+
+              <h4>Pain Points</h4>
+              <ul>
+                <li>Information is spread across many websites</li>
+                <li>Unsure how difficult trails actually are</li>
+                <li>Doesn't know how much driving is required inside parks</li>
+              </ul>
+
+              <p class="persona-quote">
+                "I don't mind planning my trip &mdash; I just don't
+                want to spend hours jumping between five different
+                websites."
+              </p>
+            </article>
+
+            <article class="persona-card">
+              <span class="persona-tag">Secondary</span>
+              <h3>Jordan Martinez</h3>
+              <p class="persona-role">34 &middot; Denver, CO &middot; Software Engineer</p>
+
+              <dl class="persona-facts">
+                <div>
+                  <dt>Experience</dt>
+                  <dd>Visits several parks a year, hikes with friends</dd>
+                </div>
+                <div>
+                  <dt>Frustration</dt>
+                  <dd>Repeats the same planning process every trip</dd>
+                </div>
+              </dl>
+
+              <h4>Goals</h4>
+              <ul>
+                <li>Build efficient itineraries</li>
+                <li>Discover less crowded trails</li>
+                <li>Compare lodging locations and optimize driving routes</li>
+              </ul>
+
+              <h4>Pain Points</h4>
+              <ul>
+                <li>Constantly switching between Maps, park websites, and trail apps</li>
+                <li>Crowds changing plans last-minute</li>
+                <li>Missing seasonal information</li>
+              </ul>
+
+              <p class="persona-quote">
+                "I know where I want to go &mdash; I just wish
+                planning everything around it was easier."
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETITIVE ANALYSIS -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Competitive Analysis</p>
+          <h2>Where existing apps fall short</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p>
+            Every existing tool solves one part of planning. I
+            compared three of the most-used ones against the app I was
+            designing to find the gap.
+          </p>
+
+          <div class="comp-table-wrap">
+            <table class="comp-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>AllTrails</th>
+                  <th>National Park Service</th>
+                  <th>Google Maps</th>
+                  <th>ParkPlan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Trail search &amp; difficulty</th>
+                  <td class="best">Excellent</td>
+                  <td>Limited</td>
+                  <td>None</td>
+                  <td class="best">Yes</td>
+                </tr>
+                <tr>
+                  <th scope="row">Park information</th>
+                  <td>Limited</td>
+                  <td class="best">Official, thorough</td>
+                  <td>Limited</td>
+                  <td class="best">Yes</td>
+                </tr>
+                <tr>
+                  <th scope="row">Lodging guidance</th>
+                  <td>None</td>
+                  <td>Limited</td>
+                  <td>Limited</td>
+                  <td class="best">Yes</td>
+                </tr>
+                <tr>
+                  <th scope="row">Transportation &amp; drive times</th>
+                  <td>None</td>
+                  <td>Limited</td>
+                  <td class="best">Yes</td>
+                  <td class="best">Yes</td>
+                </tr>
+                <tr>
+                  <th scope="row">Crowd information</th>
+                  <td>Limited</td>
+                  <td>Limited</td>
+                  <td>Limited</td>
+                  <td class="best">Yes</td>
+                </tr>
+                <tr>
+                  <th scope="row">Personalized itinerary</th>
+                  <td>None</td>
+                  <td>None</td>
+                  <td>None</td>
+                  <td class="best">Yes</td>
+                </tr>
+                <tr>
+                  <th scope="row">Trip planning in one place</th>
+                  <td>None</td>
+                  <td>None</td>
+                  <td>None</td>
+                  <td class="best">Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="strategy-list">
+            <div class="strategy-item">
+              <h3>01 &mdash; Complement AllTrails, don't replace it</h3>
+              <p>
+                <span class="label">Strategy:</span> Every trail links
+                out to "Open in AllTrails" alongside an in-app "Add to
+                Itinerary" button.
+              </p>
+              <p>
+                <span class="label">Goal:</span> AllTrails already has
+                the best trail database and a loyal user base &mdash;
+                the opportunity isn't a better trail list, it's
+                connecting that trail to the rest of the trip.
+              </p>
+            </div>
+
+            <div class="strategy-item">
+              <h3>02 &mdash; Surface official data, minus the density</h3>
+              <p>
+                <span class="label">Strategy:</span> Pull the same
+                weather, closures, and permit information the NPS
+                site has, but present it as scannable status chips
+                instead of dense text pages.
+              </p>
+              <p>
+                <span class="label">Goal:</span> Keep the trust of an
+                official source without the "difficult for beginners"
+                weakness research found in the NPS site.
+              </p>
+            </div>
+
+            <div class="strategy-item">
+              <h3>03 &mdash; One itinerary, not five tabs</h3>
+              <p>
+                <span class="label">Strategy:</span> Combine trail
+                discovery, lodging, transportation, and conditions
+                into a single saved itinerary.
+              </p>
+              <p>
+                <span class="label">Goal:</span> None of the three
+                competitors organize a trip at all &mdash; this is the
+                gap none of them fill.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH SUMMARY -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Research Summary</p>
+          <h2>What the data showed</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <div class="stat-grid">
+            <div class="stat-card">
+              <span class="stat-number">14/18</span>
+              <span class="stat-label">said choosing what places to visit is a top planning challenge</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">15/18</span>
+              <span class="stat-label">ranked crowd levels as the most important trip information</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">9/18</span>
+              <span class="stat-label">spend several days researching a single trip</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3.8/5</span>
+              <span class="stat-label">average difficulty rating for finding reliable trip information</span>
+            </div>
+          </div>
+
+          <div class="insight-list">
+            <div class="insight-item">
+              <span class="mark">&ldquo;</span>
+              <div>
+                <h3>Travelers juggle several resources for one trip</h3>
+                <p>
+                  Participants commonly relied on Google, the National
+                  Park Service website, maps, and recommendations from
+                  friends or family &mdash; often comparing Google
+                  Maps, AllTrails, and the NPS site side by side for a
+                  single decision.
+                </p>
+              </div>
+            </div>
+
+            <div class="insight-item">
+              <span class="mark">&ldquo;</span>
+              <div>
+                <h3>Drive times and logistics are underestimated</h3>
+                <p>
+                  Several respondents described booking lodging that
+                  "looked close" and ending up driving over an hour
+                  each day, or not realizing how far things actually
+                  were once inside the park.
+                </p>
+              </div>
+            </div>
+
+            <div class="insight-item">
+              <span class="mark">&ldquo;</span>
+              <div>
+                <h3>Crowds and parking quietly ruin plans</h3>
+                <p>
+                  Avoiding crowds tied for the second-biggest planning
+                  challenge, and multiple participants specifically
+                  mentioned not knowing that parking lots fill up
+                  early.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMATION ARCHITECTURE -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Information Architecture</p>
+          <h2>Organizing around the trip, not the topic</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p style="margin-bottom: 24px;">
+            Research showed users struggled to find planning
+            information because it was scattered across platforms
+            organized by topic (a trails site, a lodging site, an
+            official park site). Instead, the app's structure follows
+            the user's actual journey &mdash; explore, plan, save,
+            and manage &mdash; so related information stays grouped
+            together under a single trip.
+          </p>
+
+          <div class="diagram-frame">
+            <img src="images/natural-park-app/sitemap.png" alt="Sitemap showing Home branching into Explore (Parks, Trails, Activities, Viewpoints), Plan Trip (Itinerary, Lodging, Transportation, Conditions), Saved (Favorites, Saved Trips), and Profile (Account, Preferences, Settings)">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MVP / PRIORITIZATION -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Scoping the MVP</p>
+          <h2>Deciding what actually ships first</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p style="margin-bottom: 30px;">
+            With a long wish list of possible features, I sorted
+            everything by value versus effort to protect the core
+            planning journey from scope creep &mdash; features that
+            didn't directly help someone go from "interested" to
+            "prepared" were pushed to a future roadmap.
+          </p>
+
+          <div class="priority-grid">
+            <div class="priority-card top">
+              <h3>Top Priority &mdash; High Value, Easy</h3>
+              <ul>
+                <li>Park search &amp; overview</li>
+                <li>Trail search, filters &amp; details</li>
+                <li>Itinerary planner</li>
+                <li>Save favorites</li>
+              </ul>
+            </div>
+
+            <div class="priority-card roadmap">
+              <h3>Future Roadmap &mdash; High Value, Hard</h3>
+              <ul>
+                <li>Crowd predictions</li>
+                <li>AI trip recommendations</li>
+                <li>Real-time weather alerts</li>
+                <li>Offline maps</li>
+              </ul>
+            </div>
+
+            <div class="priority-card nice">
+              <h3>Nice to Have &mdash; Low Value, Easy</h3>
+              <ul>
+                <li>Packing checklist</li>
+                <li>Photo gallery</li>
+                <li>Share itinerary</li>
+              </ul>
+            </div>
+
+            <div class="priority-card not-mvp">
+              <h3>Not MVP &mdash; Low Value, Hard</h3>
+              <ul>
+                <li>Hotel booking</li>
+                <li>Social community feed</li>
+                <li>AR trail navigation</li>
+              </ul>
+            </div>
+          </div>
+
+          <p style="margin-top: 30px; margin-bottom: 0; font-size: 14px; opacity: 0.75;">
+            The MVP focuses on the core planning journey: discover a
+            park, compare trails, find nearby lodging, and organize an
+            itinerary. Crowd predictions and AI recommendations stayed
+            on the roadmap &mdash; genuinely valuable, but not
+            buildable without real-time data this project didn't have
+            access to.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TASK ANALYSIS / USER FLOW -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Task Analysis</p>
+          <h2>From search to a saved trip</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <div class="flow-layout">
+            <div>
+              <p class="flow-goal">Goal</p>
+              <p style="margin-bottom: 34px;">
+                Take a user from searching a park to a saved, realistic
+                trip plan without leaving the app.
+              </p>
+
+              <div class="flow-steps">
+                <div class="flow-step">
+                  <span class="step-num"></span>
+                  <div>
+                    <p>User searches for a park and opens its overview.</p>
+                  </div>
+                </div>
+
+                <div class="flow-step">
+                  <span class="step-num"></span>
+                  <div>
+                    <p>User explores trails, lodging, or transportation options based on what they need.</p>
+                  </div>
+                </div>
+
+                <div class="flow-step">
+                  <span class="step-num"></span>
+                  <div>
+                    <p>User saves favorites as they go, then builds an itinerary from what they've saved.</p>
+                  </div>
+                </div>
+
+                <div class="flow-step">
+                  <span class="step-num"></span>
+                  <div>
+                    <p>User reviews the trip plan and edits it until it's realistic, then saves the trip.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flow-success">
+                <strong>Success:</strong> the user has one saved trip
+                containing trails, lodging, and transportation &mdash;
+                built without leaving the app or losing their place.
+              </div>
+            </div>
+
+            <div class="diagram-frame diagram-frame--compact diagram-frame--inline">
+              <img src="images/natural-park-app/taskflow.png" alt="Flowchart: Start, Search Park, Park Overview, Choose Activity branching to Explore Trails, Find Lodging, or Plan Transportation, then Save Favorites, Create Itinerary, Review Trip Plan, a decision point for Trip Plan Complete looping back to Edit Itinerary if no, or Save Trip and End if yes">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISUAL IDENTITY -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Visual Identity</p>
+          <h2>A calmer, more trustworthy outdoors</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p style="margin-bottom: 30px;">
+            The brand needed to feel capable and calm rather than
+            extreme-sports adventurous &mdash; research showed the
+            audience skewed toward beginner and occasional travelers
+            who wanted to feel prepared, not intimidated.
+          </p>
+
+          <div class="identity-grid">
+            <div>
+              <div class="identity-device">
+                <div class="device-frame">
+                  <div class="device-screen">
+                    <div class="home-mock-screen" style="background: linear-gradient(160deg, #6c7d5d, #1c4530);">
+                      <div class="home-icon-grid">
+                        <div class="home-icon-glyph">
+                          <img src="images/natural-park-app/app-icon.png" alt="ParkPlan app icon on a phone home screen">
+                        </div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                      </div>
+                      <div class="home-mock-dock">
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                        <div class="home-icon-glyph"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="identity-block">
+                <span class="label">Color Palette</span>
+                <div class="swatch-row">
+                  <span class="swatch" style="background:#1c4530;"></span>
+                  <span class="swatch" style="background:#6c7d5d;"></span>
+                  <span class="swatch" style="background:#7d9aa2;"></span>
+                  <span class="swatch" style="background:#d7bc93;"></span>
+                  <span class="swatch" style="background:#ede8dd;"></span>
+                  <span class="swatch" style="background:#2a2a2a;"></span>
+                </div>
+              </div>
+
+              <div class="identity-block">
+                <span class="label">Typography</span>
+                <div class="type-sample">
+                  <div>
+                    <span class="heading-sample">Aa</span>
+                    <span>DM Serif Display &middot; Headings</span>
+                  </div>
+                  <div>
+                    <span class="body-sample">Aa</span>
+                    <span>Inter Regular &middot; Body</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="identity-block">
+                <span class="label">Brand Keywords</span>
+                <div class="keyword-row">
+                  <span class="keyword-chip">Adventure</span>
+                  <span class="keyword-chip">Nature</span>
+                  <span class="keyword-chip">Explore</span>
+                  <span class="keyword-chip">Plan</span>
+                  <span class="keyword-chip">Prepared</span>
+                  <span class="keyword-chip">Trustworthy</span>
+                  <span class="keyword-chip">Guided</span>
+                  <span class="keyword-chip">Scenic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ITERATION: WIREFRAME TO INTERFACE -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">Iteration</p>
+          <h2>From wireframe to interface</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p style="margin-bottom: 36px;">
+            Low-fidelity wireframes focused on layout, information
+            hierarchy, and navigation &mdash; getting the home
+            screen's structure right before any visual design. The
+            high-fidelity pass layered in the forest green palette,
+            serif headings, and real park photography that gave the
+            app its calmer, more trustworthy feel.
+          </p>
+
+          <div class="iteration-grid">
+            <div class="iteration-col lofi">
+              <span class="label">Digital Wireframe</span>
+              <div class="screen-frame screen-frame--wireframe">
+                <img src="images/natural-park-app/homewireframe.png" alt="Low-fidelity wireframe of the home screen, showing greeting, search bar, upcoming trip block, featured parks, and popular trails as placeholder blocks">
+              </div>
+            </div>
+
+            <div class="iteration-col hifi">
+              <span class="label">Final Design</span>
+              <div class="screen-frame device-frame">
+                <div class="device-screen">
+                  <img src="images/natural-park-app/home.png" alt="Final home screen design greeting Maya, with a real trip alert, featured parks, and popular trails">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <span class="label" style="display: block; margin: 40px 0 14px;">More Wireframes</span>
+          <div class="wireframe-strip">
+            <div class="screen-frame screen-frame--wireframe">
+              <img src="images/natural-park-app/splashscreenwireframe.png" alt="Low-fidelity wireframe of the splash screen">
+            </div>
+            <div class="screen-frame screen-frame--wireframe">
+              <img src="images/natural-park-app/onboardingwireframe.png" alt="Low-fidelity wireframe of the onboarding screen">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTION WALKTHROUGH -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">The Solution</p>
+          <h2>Walking through ParkPlan</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <p style="margin-bottom: 20px;">
+            Every core screen answers a specific research finding
+            directly &mdash; not a generic "trip planner" feature, but
+            a fix for something a real participant described.
+          </p>
+
+          <div class="feature-row">
+            <div class="screen-frame device-frame">
+              <div class="device-screen">
+                <img src="images/natural-park-app/home.png" alt="Home screen with a trip alert warning that parking lots in Yosemite Valley typically fill by 8:30am">
+              </div>
+            </div>
+            <div class="feature-copy">
+              <span class="label">01 &mdash; Home</span>
+              <h3>A trip alert before you need one</h3>
+              <p>
+                The home screen surfaces a proactive alert &mdash;
+                "Parking lots in Yosemite Valley typically fill by
+                8:30AM" &mdash; directly answering the parking and
+                crowd concerns that came up throughout research,
+                before the user even has to ask.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="screen-frame device-frame">
+              <div class="device-screen">
+                <img src="images/natural-park-app/park-detail.png" alt="Park detail screen showing Current Conditions: weather, crowd level, road status, shuttle status, parking, and alerts, all in one row of chips">
+              </div>
+            </div>
+            <div class="feature-copy">
+              <span class="label">02 &mdash; Current Conditions</span>
+              <h3>Six scattered questions, one row of chips</h3>
+              <p>
+                Weather, crowd level, road status, shuttle status,
+                parking, and alerts &mdash; the exact information 15
+                of 18 survey respondents ranked as most important
+                &mdash; are answered together on the park page instead
+                of across six separate searches.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="screen-frame device-frame">
+              <div class="device-screen">
+                <img src="images/natural-park-app/trail-detail.png" alt="Trail detail screen for Vernal and Nevada Falls with an elevation profile, current trail conditions, an Add to Itinerary button, and an Open in AllTrails link">
+              </div>
+            </div>
+            <div class="feature-copy">
+              <span class="label">03 &mdash; Trail Detail</span>
+              <h3>Add it to the trip, or check AllTrails</h3>
+              <p>
+                Rather than competing with AllTrails' trail database,
+                every trail links out to it directly while adding an
+                "Add to Itinerary" action AllTrails doesn't have
+                &mdash; the connective tissue competitors were
+                missing.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="screen-frame device-frame">
+              <div class="device-screen">
+                <img src="images/natural-park-app/itinerary.png" alt="Itinerary screen showing a day-by-day Yosemite trip plan with activities, times, and a Trip Information grid for getting there, fees, alerts, shuttles, lodging, and safety"></div>
+            </div>
+            <div class="feature-copy">
+              <span class="label">04 &mdash; Itinerary</span>
+              <h3>Trails, lodging, and transportation, one trip</h3>
+              <p>
+                Answers the top user goal directly: a single day-by-day
+                itinerary that holds activities, timing, and the trip
+                logistics (getting there, lodging, shuttles, safety)
+                that were previously scattered across five tabs.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-row">
+            <div class="screen-frame device-frame">
+              <div class="device-screen">
+                <img src="images/natural-park-app/saved.png" alt="Saved screen showing four saved national parks and three collections: Summer Trip Ideas, California, and Want to Visit" style="object-position: 0% 0%;">
+              </div>
+            </div>
+            <div class="feature-copy">
+              <span class="label">05 &mdash; Saved &amp; Collections</span>
+              <h3>Somewhere for "maybe later" to live</h3>
+              <p>
+                Research showed people save ideas in notes apps and
+                screenshots long before they're ready to plan.
+                Collections give that early, undecided browsing a home
+                inside the app instead of scattered across other tools.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MORE SCREENS -->
+    <section class="case-section">
+      <div class="case-section-head">
+        <div>
+          <p class="eyebrow">More Screens</p>
+          <h2>A closer look</h2>
+        </div>
+
+        <div class="case-section-body" style="max-width: none;">
+          <div class="screen-flow">
+            <div class="screen-item">
+              <div class="screen-frame device-frame">
+                <div class="device-screen">
+                  <img src="images/natural-park-app/splashscreen.png" alt="ParkPlan splash screen with logo over a Yosemite meadow photo">
+                </div>
+              </div>
+              <span class="screen-step-num">Splash</span>
+            </div>
+
+            <div class="screen-item">
+              <div class="screen-frame device-frame">
+                <div class="device-screen">
+                  <img src="images/natural-park-app/onboarding.png" alt="Onboarding screen reading Your adventure starts here">
+                </div>
+              </div>
+              <span class="screen-step-num">Onboarding</span>
+            </div>
+
+            <div class="screen-item">
+              <div class="screen-frame device-frame">
+                <div class="device-screen">
+                  <img src="images/natural-park-app/explore.png" alt="Explore screen with search, filters, a map view, and a list of 63 parks found">
+                </div>
+              </div>
+              <span class="screen-step-num">Explore</span>
+            </div>
+
+            <div class="screen-item">
+              <div class="screen-frame device-frame">
+                <div class="device-screen">
+                  <img src="images/natural-park-app/profile.png" alt="Profile screen for Maya Chen showing parks visited, trails completed, achievements, and settings">
+                </div>
+              </div>
+              <span class="screen-step-num">Profile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROTOTYPE LINK -->
+    <section class="case-section">
+      <div class="prototype-card">
+        <div>
+          <h3>See it in motion</h3>
+          <p>
+            Click through the full interactive prototype in Figma,
+            including transitions and states not shown above.
+          </p>
+        </div>
+
+        <div class="case-nav">
+          <a class="primary" href="https://www.figma.com/proto/J6dbEM05v4JMp4nAhYglFT/ParkPlan?node-id=64-2&p=f&t=gDxcqMmGnE05Gx3l-0&scaling=scale-down&content-scaling=fixed&page-id=52%3A130&starting-point-node-id=64%3A2" target="_blank" rel="noopener">
+            View Prototype in Figma →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING / NEXT STEPS -->
+    <section class="case-closing">
+      <p class="eyebrow" style="margin-bottom: 18px;">Reflection</p>
+      <h2>What I'd explore next</h2>
+      <p>
+        The MVP proves out the core planning journey, but the roadmap
+        items deferred during prioritization are where this app gets
+        genuinely smart: real-time crowd predictions instead of
+        typical patterns, AI-suggested itineraries based on a user's
+        past trips, and offline maps for the parks where cell service
+        disappears the moment you need it most.
+      </p>
+
+      <div class="case-nav">
+        <a class="primary" href="curly-hair-app.html">Next project →</a>
+        <a href="index.html#work">Back to work</a>
+      </div>
+
+      <p class="closing-note" style="margin-top: 36px;">
+        Thanks for reading!
+        <span>♡</span>
+      </p>
+    </section>
+
+  </main>
+
+  <script>
+    const menuButton = document.querySelector(".menu-button");
+    const navigation = document.querySelector(".site-nav");
+
+    menuButton.addEventListener("click", () => {
+      const menuIsOpen = navigation.classList.toggle("open");
+
+      menuButton.setAttribute(
+        "aria-expanded",
+        menuIsOpen.toString()
+      );
+
+      document.body.classList.toggle("menu-open", menuIsOpen);
+    });
+
+    navigation.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navigation.classList.remove("open");
+        document.body.classList.remove("menu-open");
+        menuButton.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</body>
+</html>
