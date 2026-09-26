@@ -431,6 +431,17 @@ img {
   line-height: 1;
 }
 
+.project-subtitle {
+  margin: 6px 0 0;
+
+  color: var(--coral);
+
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .project-category,
 .small-project-category {
   margin: 8px 0 13px;

@@ -515,6 +515,32 @@ svg {
   margin-top: 40px;
 }
 
+.bottom-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.about-contact a {
+  color: var(--text);
+  opacity: 0.75;
+  transition: opacity 180ms ease, color 180ms ease;
+}
+
+.about-contact a:hover {
+  opacity: 1;
+  color: var(--accent);
+}
+
 .resume-button {
   display: inline-flex;
   align-items: center;

@@ -10,10 +10,10 @@
 
   <meta
     name="description"
-    content="Case study: National Park App (ParkPlan) — a UX research and app design project helping travelers plan a national park trip in one place instead of switching between five different websites."
+    content="Case study: ParkPlan — National Park Trip Planning App. A UX research and app design project helping travelers plan a national park trip in one place instead of switching between five different websites."
   >
 
-  <title>National Park App | Ruth Tadesse</title>
+  <title>ParkPlan | Ruth Tadesse</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,13 +60,15 @@
         ← Back to work
       </a>
 
-      <h1 class="case-title">National Park App</h1>
+      <h1 class="case-title">ParkPlan</h1>
+      <p class="case-subtitle">National Park Trip Planning App</p>
 
       <p class="case-summary">
-        A UX research and app design project helping travelers plan a
-        national park trip in one place &mdash; trails, lodging,
-        transportation, and conditions &mdash; instead of switching
-        between five different websites to piece one trip together.
+        ParkPlan is a personal project: a UX research and app design
+        case study helping travelers plan a national park trip in one
+        place &mdash; trails, lodging, transportation, and conditions
+        &mdash; instead of switching between five different websites to
+        piece one trip together.
       </p>
 
       <dl class="case-meta">
@@ -90,6 +92,19 @@
           <dd>Figma, Google Forms</dd>
         </div>
       </dl>
+
+      <div class="case-outcome">
+        <span class="label">Outcome</span>
+        <p>
+          A prioritized MVP &mdash; trail discovery, lodging,
+          transportation, and one saved itinerary &mdash; built from an
+          18-person survey and 5&ndash;6 interviews, with features like
+          crowd predictions deliberately deferred until real-time data
+          is available. It hasn't been usability-tested end to end yet
+          &mdash; see the reflection at the bottom of this page for what
+          I'd validate first.
+        </p>
+      </div>
 
       <div class="case-hero-image">
         <div class="hero-device-stack">
@@ -877,6 +892,9 @@
             <div class="screen-frame screen-frame--wireframe">
               <img src="images/natural-park-app/onboardingwireframe.png" alt="Low-fidelity wireframe of the onboarding screen">
             </div>
+            <div class="screen-frame screen-frame--wireframe">
+              <img src="images/natural-park-app/explorewireframe.png" alt="Low-fidelity wireframe of the explore screen, showing search, filters, and a placeholder list of parks">
+            </div>
           </div>
         </div>
       </div>
@@ -892,9 +910,11 @@
 
         <div class="case-section-body" style="max-width: none;">
           <p style="margin-bottom: 20px;">
-            Every core screen answers a specific research finding
-            directly &mdash; not a generic "trip planner" feature, but
-            a fix for something a real participant described.
+            The five screens below walk through one continuous trip:
+            discover a park, evaluate it, choose a trail, build the
+            itinerary, and manage what's saved &mdash; each one
+            answering a specific research finding directly, not just a
+            generic "trip planner" feature.
           </p>
 
           <div class="feature-row">
@@ -904,7 +924,7 @@
               </div>
             </div>
             <div class="feature-copy">
-              <span class="label">01 &mdash; Home</span>
+              <span class="label">Step 1 of 5 &mdash; Discover a Park</span>
               <h3>A trip alert before you need one</h3>
               <p>
                 The home screen surfaces a proactive alert &mdash;
@@ -923,7 +943,7 @@
               </div>
             </div>
             <div class="feature-copy">
-              <span class="label">02 &mdash; Current Conditions</span>
+              <span class="label">Step 2 of 5 &mdash; Evaluate the Park</span>
               <h3>Six scattered questions, one row of chips</h3>
               <p>
                 Weather, crowd level, road status, shuttle status,
@@ -942,7 +962,7 @@
               </div>
             </div>
             <div class="feature-copy">
-              <span class="label">03 &mdash; Trail Detail</span>
+              <span class="label">Step 3 of 5 &mdash; Choose a Trail</span>
               <h3>Add it to the trip, or check AllTrails</h3>
               <p>
                 Rather than competing with AllTrails' trail database,
@@ -960,7 +980,7 @@
                 <img src="images/natural-park-app/itinerary.png" alt="Itinerary screen showing a day-by-day Yosemite trip plan with activities, times, and a Trip Information grid for getting there, fees, alerts, shuttles, lodging, and safety"></div>
             </div>
             <div class="feature-copy">
-              <span class="label">04 &mdash; Itinerary</span>
+              <span class="label">Step 4 of 5 &mdash; Build the Trip</span>
               <h3>Trails, lodging, and transportation, one trip</h3>
               <p>
                 Answers the top user goal directly: a single day-by-day
@@ -978,7 +998,7 @@
               </div>
             </div>
             <div class="feature-copy">
-              <span class="label">05 &mdash; Saved &amp; Collections</span>
+              <span class="label">Step 5 of 5 &mdash; Manage &amp; Save</span>
               <h3>Somewhere for "maybe later" to live</h3>
               <p>
                 Research showed people save ideas in notes apps and
@@ -1005,19 +1025,19 @@
             <div class="screen-item">
               <div class="screen-frame device-frame">
                 <div class="device-screen">
-                  <img src="images/natural-park-app/splashscreen.png" alt="ParkPlan splash screen with logo over a Yosemite meadow photo">
+                  <img src="images/natural-park-app/trail-detail-popup.png" alt="Add Mist Trail to... popup letting the user assign a trail to a specific day of their Yosemite trip, or create a new day" style="object-position: 0% 100%;">
                 </div>
               </div>
-              <span class="screen-step-num">Splash</span>
+              <span class="screen-step-num">Add to Trip</span>
             </div>
 
             <div class="screen-item">
               <div class="screen-frame device-frame">
                 <div class="device-screen">
-                  <img src="images/natural-park-app/onboarding.png" alt="Onboarding screen reading Your adventure starts here">
+                  <img src="images/natural-park-app/itinerary-popup.png" alt="Itinerary activity detail popup for Tunnel View, showing directions, trip details, and options to change the time or remove the activity" style="object-position: 0% 100%;">
                 </div>
               </div>
-              <span class="screen-step-num">Onboarding</span>
+              <span class="screen-step-num">Manage Activity</span>
             </div>
 
             <div class="screen-item">
@@ -1072,6 +1092,16 @@
         typical patterns, AI-suggested itineraries based on a user's
         past trips, and offline maps for the parks where cell service
         disappears the moment you need it most.
+      </p>
+
+      <p style="margin-top: 22px;">
+        <strong>What I'd do differently:</strong> every trail detail
+        page depends on linking out to AllTrails rather than storing
+        key trail info locally, which was the right call for scope but
+        means the app's most-used feature is only as reliable as that
+        outbound link. I'd cache the basics (distance, elevation,
+        difficulty) locally next time so a slow or broken link doesn't
+        make ParkPlan itself feel broken.
       </p>
 
       <div class="case-nav">
